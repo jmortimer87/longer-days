@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Longer Days</title>
   <link rel="stylesheet" href="style.css" />
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/luxon@3.7.2/build/global/luxon.min.js"></script>
 </head>
 
 <body>
@@ -25,8 +22,6 @@
       <div class="controls">
         <button id="useGeoBtn" class="btn">Use my location</button>
 
-
-
         <div class="coords">
           <input id="lat" type="number" step="0.0001" placeholder="lat" />
           <input id="lng" type="number" step="0.0001" placeholder="lng" />
@@ -38,25 +33,25 @@
     <section class="grid">
       <div class="card hero">
         <div class="kicker">Today</div>
-        <div class="big" id="headline">Loading…</div>
+        <div class="big" id="headline">Loading...</div>
 
-        <div class="meta" id="metaLine">—</div>
-        <div class="meta" id="dailyLine">—</div>
+        <div class="meta" id="metaLine">-</div>
+        <div class="meta" id="dailyLine">-</div>
 
         <div class="mini">
           <div>
             <div class="label">Baseline sunset (21 Dec 2025)</div>
-            <div class="value" id="baselineSunset">—</div>
+            <div class="value" id="baselineSunset">-</div>
           </div>
 
           <div>
-            <div class="label">Today’s sunset</div>
-            <div class="value" id="todaySunset">—</div>
+            <div class="label">Today's sunset</div>
+            <div class="value" id="todaySunset">-</div>
           </div>
 
           <div>
             <div class="label">Avg. gain/day (since baseline)</div>
-            <div class="value" id="avgGain">—</div>
+            <div class="value" id="avgGain">-</div>
           </div>
         </div>
       </div>
@@ -64,7 +59,7 @@
       <div class="card chartCard">
         <div class="cardTop">
           <h2>Minutes later vs 21 Dec 2025</h2>
-          <p class="small" id="rangeLine">—</p>
+          <p class="small" id="rangeLine">-</p>
         </div>
 
         <div class="chartWrap">
@@ -74,12 +69,12 @@
 
       <div class="card footnote">
         <p class="small">
-          Data source: Sunrise-Sunset.org API (attribution required).
+          Sunset times are calculated locally in your browser, so the page does not rely on a daily API request.
         </p>
       </div>
     </section>
   </main>
 
-<script src="app.js?v=2026-06-19-1"></script>
+  <script src="app.js?v=2026-06-19-2"></script>
 </body>
 </html>
